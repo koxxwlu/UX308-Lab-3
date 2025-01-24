@@ -4,8 +4,8 @@ function convertKmToMiles(km) {
 }
 
 let km = 50;
-let miles = convertKmToMiles(km);
+// let miles = convertKmToMiles(km);
 
 // console.log(`${km}km is ${miles}miles.`);
 
-export {convertKmToMiles}
+export {convertKmToMiles};

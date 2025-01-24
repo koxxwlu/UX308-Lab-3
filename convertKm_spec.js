@@ -1,9 +1,16 @@
-Welcome to Node.js v20.18.1.
-Type ".help" for more information.
-> node sayThings.j
-     ^^^^^^^^^
+import {convertKmToMiles} from `./convertKiloToMiles.js`;
 
-Uncaught SyntaxError: Unexpected identifier 'sayThings'
-> Uncaught ReferenceError: clear is not defined
-> Uncaught ReferenceError: clear is not defined
-> 
+describe("test convertKiloToMiles", function() {
+    it("test 150 km", function() {
+        let km = 150;
+        let miles = convertKmToMiles(km);
+        expect(miles.toFixed(2)).toBe(93.23);
+    });
+    it("test 70 km", function() {
+        let km = 70;
+        let miles = convertKmToMiles(km);
+        expect(miles.toFixed(2)).toBe(93.23);
+    });
+});
+
+console.log(`${km}km is equal to ${miles}miles.`);
