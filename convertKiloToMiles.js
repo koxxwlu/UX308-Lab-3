@@ -3,7 +3,7 @@ function convertKmToMiles(km) {
     return miles;
 }
 
-let km = 50;
+// let km = 50;
 // let miles = convertKmToMiles(km);
 
 // console.log(`${km}km is ${miles}miles.`);
